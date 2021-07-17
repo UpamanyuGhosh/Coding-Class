@@ -3,11 +3,11 @@
 <head>
     <title>Student Registration</title>
 </head>
-<body>
+<body style="text-align: justify;">
     
-    <form>
+    <form style="background: rgb(29, 202, 6);">
         Name <br>
-        <input type= "text"><br>
+        <input type= "text" name="Name"><br>
         Class<br>
         <input type="number"><br>
         Roll Number <br>
@@ -17,12 +17,7 @@
         Address <br>
         <input type="text"><br>
     </form>
-    <button onclick = "displayContent()">Submit</button>
-    <p id="display">   </p>
-    <script>
-        function displayContent() {
-            document.getElementById("display").innnerHTML = "The Form Has Been Submitted";
-        }
+    <button>Submit</button>
         </script>
 </body>
 </html>
