@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body style="background-color: rgb(231, 85, 17);text-align: center;">
+        
+            <p id="print"></p>
+            <script>
+                function Calculator(){
+                    var a = parseInt(a);
+                    var b = parseInt(b);
+                    var s = a + b;
+                    var s2 = a - b;
+                    var m = a * b;
+                    var d = a % b;
+                    document.getElementById("print").innerHTML = "Sum is :- "+ sum;
+                }
+            </script>
+<form>
+    <label>Enter First Number</label>
+    <input type="number" id="1" value="">
+    <label>Enter Second Number</label>
+    <input type="number" id="2" value=""><br>
+    <button onclick='document.write("a + b = ",s)'>+</button><br>
+    <button onclick='document.write("a - b = ",s2)'>-</button><br>
+    <button onclick='document.write("a * b = ",m)''>x</button><br>
+    <button onclick='document.write("a / b = ",d)'>/</button>
+    </form>
+            </html>
