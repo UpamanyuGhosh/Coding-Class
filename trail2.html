@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>A Different Approach</title>
+
+    </head>
+    <body style="background: blue;text-align: center;">
+    <form>
+        <label style = "font-style: italic;">Enter Any Number</label>
+        <input type="number" id="1" value="">
+        <button type = "button" onclick = "Table()">Click To Get Table</button>
+        <p id="Display"></p>
+    </form>
+    <script>
+        function Table(){
+            var a = document.getElementById("1").value;
+            var x;
+            for(x = 1 ;  x <= 10 ; x++){
+                var y = parseInt(a) * x;
+                var finalproduct = +a+ "X" +x+ "=" +y+ '</br>';
+            }
+            document.getElementById("Display").innerHTML = finalproduct;
+        }
+    </script>
+    </body>
+</html>
