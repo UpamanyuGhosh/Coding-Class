@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+    </head>
+    <body style="background: rgb(157, 255, 0);text-align: center;">
+        <p style="font-style: italic; font-size: xx-large; color: darkred;">Please Fill This Form So As To Participate In Swimming</p>
+    <form style="border:orange;padding-left: 600px;padding-right: 600px; border-width:6px;border-spacing: 0px; border-style:dashed;text-align: center;">
+        <label style = "font-style: italic;font-size: x-large;">Name</label>
+        <input type="text" id="1" value="">
+        <label style = "font-style: italic;font-size: x-large;">Class</label>
+        <input type="number" id="2" value="">
+        <label style = "font-style: italic;font-size: x-large;">Section</label>
+        <input type="text" id="3" value="">
+        <label style = "font-style: italic;font-size: x-large;">Roll Number</label>
+        <input type="number" id="4" value="">
+        <label style = "font-style: italic;font-size: x-large;">Disease Affecting Swimming</label>
+        <input type="text" id="5" value="">
+        <button style="color: blueviolet; font-size: x-large;" type = "button" onclick = "form()">Submit</button>
+        <p id="PlsDisplay"></p>
+    </form> 
+    <script>
+        function form(){
+            var a =document.getElementById("1").Value
+            var b =document.getElementById("2").value
+            var c =document.getElementById("3").value
+            var d =document.getElementById("4").value
+            window.alert.getElementById("PlsDisplay").innerHTML = a ;
+        }
+    </script>
+</body>
+</html>
