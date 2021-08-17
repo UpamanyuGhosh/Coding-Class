@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>School Admission Form</title>
+    </head>
+    <body style="background: rgb(102, 102, 99);text-align: center;">
+        <p style="font-style: italic; font-size: xx-large; color: darkred;">Please Fill This Form So As To Admit Your Child To La Martiniere For Boys</p>
+    <form style="border-radius: 2px;padding-left: 200px;padding-right: 200px; ;border-spacing: 0px;border-color: blueviolet; border-style:ridge;">
+        <label style = "font-style: italic;color: rgb(63, 184, 205);font-size: x-large;text-align: left;">First Name</label>
+        <input style = "margin-left: 20px;"type="text" id="1" value=""><br><br>
+        <label style = "font-style: italic;color: rgb(63, 196, 205);font-size: x-large;text-align: left;">Last Name</label>
+        
+        
+        <input style = "margin-left: 20px;" type="text" id="2" value=""><br><br>
+        <label style = "font-style: italic;color: rgb(63, 184, 205);font-size: x-large;text-align: left;">Gender</label>
+        
+        
+        <input style = "margin-left: 53px;;" type="radio"  id="3a" value=""><label>Male</label>
+        <input style = "margin-left: 53px;;" type="radio"  id="3b" value=""><label>Female</label>
+        <input style = "margin-left: 53px;;" type="radio"  id="3c" value=""><label>Transgender</label><br><br>
+        
+        
+        <label style = "font-style: italic;color: rgb(63, 196, 205);font-size: x-large;text-align: left;">Date Of Birth</label>
+        <input style = "margin-left: 1px;;" type="date" id="4" value=""><br><br>
+        
+        
+        <label style = "font-style: italic;color: rgb(63, 184, 205);font-size: x-large;text-align: left;">Father Name</label>
+        <input style = "margin-left: 20px;;"type="text" id="5" value=""><br><br>
+        
+        
+        <label style = "font-style: italic;color: rgb(63, 200, 205);font-size: x-large;text-align: left;">Mother Name </label>
+        <input style = "margin-left: 20px;"type="text" id="6" value=""><br><br>
+        
+        
+        
+        <label style = "font-style: italic;color: rgb(63, 205, 198);font-size: x-large;text-align: left;"> Father Phone Number </label>
+        <input style = "margin-left: 20px;"type="number" id="8" value=""><br><br>
+        
+        
+        <label style = "font-style: italic;color: rgb(63, 205, 205);font-size: x-large;text-align: left;"> Mother Phone Number </label>
+        <input style = "margin-left: 20px;"type="number" id="9" value=""><br><br>
+       
+       
+        <label style = "font-style: italic;color: rgb(63, 205, 193);font-size: x-large;text-align: left;"> Guardian (In Absence Of Parents) Name</label>
+        <input style = "margin-left: 20px;"type="text" id="10" value=""><br><br>
+       
+       
+        <label style = "font-style: italic;color: rgb(63, 205, 186);font-size: x-large;text-align: left;"> Guardian Phone Number</label>
+        <input style = "margin-left: 20px;"type="number" id="11" value=""><br><br>
+        <label for = "Something"style = "font-style: italic;color: rgb(63, 188, 205);font-size: x-large;text-align: left;"> Address  </label>
+        <textarea style = "margin-left: 20px;"id="Something" rows="4" cols="50"></textarea><br><br><br>
+    
+        <button style="color: blueviolet; font-size: x-large;" type = "button" onclick = "admission()">Submit</button>
+    </form>
+    <script>
+  function admission(){
+      var a = document.getElementById("1").value; 
+      var b = document.getElementById("2").value; 
+      var c = document.getElementById("3a").value;
+      var x =  document.getElementById("3b").value;
+     var y = document.getElementById("3c").value;
+      var d = document.getElementById("4").value; 
+      var e = document.getElementById("5").value; 
+      var f = document.getElementById("6").value; 
+      var g = document.getElementById("Something").value; 
+      var h = document.getElementById("8").value; 
+      var i = document.getElementById("9").value; 
+      var j = document.getElementById("10").value; 
+      var k = document.getElementById("11").value;
+      xy = " ";  
+      document.write("First name is: "+a<br>);
+     document.write("Last name is: "+b);
+     if(xy ==c ){
+         document.write("Gender is: "+c);
+     }else if(xy == x){
+         document.write("Gender is: "+x);
+     }else if (xy == y){
+document.write("Gender is: "+y)
+     }
+     
+     document.write("DOB is: "+d);
+     document.write("Father name is: "+e);
+     document.write("Mother name is: "+f);
+     document.write("Adress is: "+g);
+     document.write("Father Phone Number is: "+h);
+     document.write("Mother Phone Number is: "+i);  
+     document.write("Guardian(In Absence Of Parents) is: "+j);
+     document.write("Guardian Phone Number is: "+k);
+    }
+    
+
+    </script>
+</body>
+</html>
