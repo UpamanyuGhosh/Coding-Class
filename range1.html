@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Range In Java Script</h1>
+<p>Please Enter A Number</p>
+<form>
+    <input type="number" value="" id="1">
+    <button type="button" onclick="range()">Submit</button>
+</form>
+<script>
+     function range(){
+        if(confirm("Are You Sure To Submit?") == true){
+var num = document.getElementById("1").value;
+var x = parseInt();
+for(x = 0 ; x < 50 ; x += 10){
+if(num <= 50){
+    if(num >= x && num <= x+10){
+        document.write("The number is in a range of "+x+" -- "+(x+10));
+    }
+}
+else{
+        document.write("Please enter a number less than 51");
+        return;
+    }
+}
+}
+     }
+     </script>
+</body>
+</html>
