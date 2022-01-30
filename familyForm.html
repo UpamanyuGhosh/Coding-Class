@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Family Form</h1>
+<p>Please Fill The Form Per The Instructions </p>
+<form style="background-color: rgb(4, 235, 252);border:rgb(0, 0, 0);padding-left: 400px;padding-right: 400px; border-width:6px;border-spacing: 0px; border-style:dashed;text-align: center;">
+    <label>Your Name</label>
+    <input type="text" value="" id="yourName" value=""><br><br>
+    <label>Your Age</label>
+    <input type="number" value="" id="yourAge" value=""><br><br>
+    <label>Father Name</label>
+    <input type="text" value="" id="fatherName" value=""><br><br>
+    <label>Father Age</label>
+    <input type="number" value="" id="fatherAge" value=""><br><br>
+    <label>Mother Name</label>
+    <input type="text" value="" id="motherName" value=""><br><br>
+    <label>Mother Age</label>
+    <input type="number" value="" id="motherAge" value=""><br><br>
+    <label>Grandfather Name</label>
+    <input type="text" value="" id="grandfatherName" value=""><br><br>
+    <label>Grandfather Age</label>
+    <input type="number" value="" id="grandfatherAge" value=""><br><br>
+    <label>Grandmother Name</label>
+    <input type="text" value="" id="grandmotherName" value=""><br><br>
+    <label>Grandmother Age</label>
+    <input type="number" value="" id="grandmotherAge" value=""><br><br>
+    <label>Guardian Name</label>
+    <input type="text" value="" id="gaurdianName" value=""><br><br>
+    <label>Guaradian Age</label>
+    <input type="number" value="" id="gauradianAge" value=""><br><br>
+    <button type="button" onclick="info()">Family Info</button>
+    <button type="button" onclick="info2()">Gauradian Info(Only)</button>
+    <h1 id="Display"></h1>
+    <p id="Display2"></p>
+</form>
+<script>
+    function info(){
+        //confirm("Do You Want To Proceed ?");
+        var a = document.getElementById("yourName").value;
+        var b = document.getElementById("yourAge").value;
+        var c = document.getElementById("fatherName").value;
+        var d = document.getElementById("fatherAge").value;
+        var e = document.getElementById("motherName").value;
+        var f = document.getElementById("motherAge").value;
+        var g = document.getElementById("grandfatherName").value;
+        var h = document.getElementById("grandfatherAge").value;
+        var i = document.getElementById("grandmotherName").value;
+        var j = document.getElementById("grandmotherAge").value;
+        var k = document.getElementById("gaurdianName").value;
+        var l = document.getElementById("gauradianAge").value;
+document.getElementById("Display").innerHTML = "The Information are as follows: <br> Your Name -- "+a+"<br> Your Age -- "+b+"<br> Father Name -- "+c+"<br> Father Age -- "+d+"<br> Mother Name -- "+e+"<br> Mother Age -- "+f+"<br> Grandfather Name -- "+g+"<br> Grandfather Age -- "+h+"<br> Grandmother Name -- "+i+"<br> Grandmother Age -- "+j+"<br> Guardian Name -- "+k+"<br> Guaradian Age -- "+l;
+
+    }
+    function info2(){
+       // confirm("Do You Want To Proceed ?");
+         var x = parseInt(document.getElementById("yourAge").value);
+         var x2 = parseInt(document.getElementById("fatherAge").value);
+        var x3 = parseInt(document.getElementById("motherAge").value);
+        var x4 = parseInt(document.getElementById("grandfatherAge").value);
+         var x5 = parseInt(document.getElementById("grandmotherAge").value);
+         var x6 = parseInt(document.getElementById("gauradianAge").value);
+         var x7 = document.getElementById("gauradianName").value;
+        var z = (x+x2+x3+x4+x5+x6) / 6;
+        document.getElementById("Display2").innerHTML = "The Information Of The Gauradian(Only) are as Follows: <br> Guardian Name -- "+x7+"Guaradian Age -- "+x6+"<br> The Average Age Of My Family Is -- "+z;
+    }
+</script>
+</body>
+</html>
